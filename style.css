@@ -33,8 +33,33 @@
       font-size: larger;
     }
   }
-  @media only screen and (max-width:1050px) {
+  @media only screen and (max-width:400px) {
     /* For mobile phones: */
+    .fashion-text {
+      text-align: center;
+    }
+    .film-text {
+      padding-bottom: 15%;
+    }
+    .gallery {
+      display: grid;
+      max-width: 40%;
+      margin: 0 auto;
+      grid-gap: 1rem;
+      /* grid-template-columns: 60px 60px; */
+      /* grid-auto-rows: minmax(150px, auto); */
+    }
+    .gallery-item {
+      height: 100%;
+      width: 220px;
+      border-radius: 5px;
+    }
+    
+    .gallery-item:img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+
     /* .about-image {
       width: 100%; 
       height: auto;
@@ -70,13 +95,12 @@
   margin: 0 auto;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: minmax(150px, auto);
+  /* grid-auto-rows: minmax(150px, auto); */
 }
 
 .gallery-item {
   max-width: 100%;
   border-radius: 5px;
-  transition: all .3s;
 }
 
 .gallery-item:img {
